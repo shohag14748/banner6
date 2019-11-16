@@ -1,0 +1,320 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3 top reasons</title>
+    <link href="https://fonts.googleapis.com/css?family=Domine:400,700|Roboto+Condensed:400,700|Nunito&display=swap" rel="stylesheet">
+    <style>
+        .ad-wrap {
+            display: inline-block;
+        }
+
+        .ad300x250 {
+            width: 300px;
+            height: 250px;
+            background: #999;
+            display: block;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid #000;
+        }
+
+        .ad300x250 .slide1 {
+            background-image:url(image/Legal-Dark.png);
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-size: auto 100%;
+            transform: scale(1.5);
+            background-position: center;
+            background-repeat: no-repeat;
+            animation: slide1 1s ease;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes slide1 {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .ad300x250 .slide1-text {
+            position: absolute;
+            top: 0;
+            color: #fff;
+            width: 270px;
+            font-family: 'Domine', serif;
+            font-size: 35px;
+            padding: 20px 15px;
+            margin: 0;
+            left: 0px;
+            opacity: 0;
+            animation: slide1-text1 3s ease;
+            animation-fill-mode: forwards;
+            animation-delay: 1s;
+        }
+
+        @keyframes slide1-text1 {
+            0% {
+                opacity: 0;
+                top: 50px;
+            }
+            33.33%{
+                opacity: 1;
+                top: 0;
+            }
+           66.66%{
+                opacity: 1;
+                top: 0;
+            }
+            100% {
+                opacity: 0;
+                top: -50px;
+            }
+        }
+
+        .ad300x250 .slide2-text1 {
+            position: absolute;
+            left: 0px;
+            top: 50px;
+            color: #fff;
+            width:230px;
+            font-family: 'Domine', serif;
+            font-size: 20px;
+            padding: 20px;
+            margin: 0;
+            font-style: italic;
+            opacity: 0;
+            animation: slide2-text1 1.5s ease;
+            animation-fill-mode: forwards;
+            animation-delay: 3s;
+        }
+
+        @keyframes slide2-text1 {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+                top: 0px;
+            }
+        }
+
+        .ad300x250 .slide2-text3 {
+            position: absolute;
+            bottom: 25px;
+            left: -50px;
+            color: #fff;
+            background: #818285;
+            width: 260px;
+            font-family: 'Domine', serif;
+            font-size: 14px;
+            padding: 5px 20px;
+            margin: 0;
+            opacity: 0;
+            line-height: 18px;
+            animation: slide2-text3 1s ease;
+            animation-fill-mode: forwards;
+            animation-delay: 4.5s;
+        }
+
+        @keyframes slide2-text3 {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+                left: 0px;
+            }
+        }
+        .ad300x250 .slide2-text2 {
+            position: absolute;
+            bottom: 25px;
+            left: 0px;
+            color: #fff;
+            background-image: url(image/taxt-bg.png);
+            background-position: right;
+            background-size: auto 100%;
+            width: 150px;
+            font-family: 'Domine', serif;
+            font-size: 14px;
+            padding: 5px 20px;
+            margin: 0;
+            opacity: 0;
+            line-height: 18px;
+            animation: slide2-text2 1s ease;
+            animation-fill-mode: forwards;
+            animation-delay: 5.5s;
+        }
+
+        @keyframes slide2-text2 {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+                bottom: 50px;
+            }
+        }
+
+        .ad300x250 .slide2-image{
+            position: absolute;
+            right: -80px;
+            width: 140px;
+            bottom: 30px;
+            opacity: 0;
+            animation: slide2-image1 1s ease;
+            animation-fill-mode: forwards;
+            animation-delay: 5.5s;
+        }
+
+        @keyframes slide2-image1 {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+                right: -30px;
+            }
+        }
+
+        .ad300x250 .slide3 {
+            background-image:url(image/Legal-Dark.png);
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            background-size: auto 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            animation: slide3 1s ease;
+            animation-fill-mode: forwards;
+            animation-delay: 8s;
+        }
+
+        @keyframes slide3 {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+       
+        .ad300x250 .slide3-text{
+            position: absolute;
+            left: 0px;
+            color: #fff;
+            background-color: #223e81;
+            width: 300px;
+            font-family: 'Domine', serif;
+            font-size: 18px;
+            text-align: center;
+            padding: 10px 40px;
+            box-sizing: border-box;
+            margin: 0;
+            opacity: 0;
+            bottom: -25px;
+            line-height: 20px;
+            animation: slide3-text 1s ease;
+            animation-fill-mode: forwards;
+            animation-delay: 8.5s;
+        }
+
+        @keyframes slide3-text {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+                bottom: 25px;
+            }
+        }
+
+
+        .ad300x250 .slide3-image {
+            position: absolute;
+            left: 60px;
+            width: 180px;
+            top: 10px;
+            opacity: 0;
+            animation: slide3-image1 1s ease;
+            animation-fill-mode: forwards;
+            animation-delay: 8.5s;
+        }
+
+        @keyframes slide3-image1{
+            0% {
+                opacity: 0;
+                transform: scale(0);
+            }
+
+            100% {
+                opacity: .8;
+                transform: scale(1);
+            }
+        }
+
+        
+
+        .ad300x250 .copyright {
+            position: absolute;
+            bottom: 2px;
+            right: 5px;
+            margin: 0;
+            font-size: 10px;
+            color: #fff;
+            animation: copyright 1s ease;
+            animation-fill-mode: forwards;
+            animation-delay: 9.5s;
+            opacity: 0;
+        }
+
+        @keyframes copyright {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ad 300x250 start -->
+    <a href="" class="ad-wrap">
+        <div class="ad300x250">
+            <div class="slide1">
+                <P class="slide1-text">Did You Know?</P>
+            </div>
+            <div class="slide2">
+                <img src="image/Nation,-Mark_2400x2400_transparent-compressor.png" alt="" class="slide2-image">
+                <div class="texts">
+                    <P class="slide2-text1">"... You do not have to lose a single shingle to be entitled to a full roof replacement."</P>
+                    <P class="slide2-text2">Attorney Mark Nation</P>
+                    <P class="slide2-text3">Florida Insurance Blog</P>
+                </div>
+            </div>
+            <div class="slide3">
+                <img src="image/Ey5uhwqG.png" alt="" class="slide3-image">
+                <P class="slide3-text">Schedule a Free Meeting with Calloway Today</P>
+            </div>
+            <p class="copyright">&copy; 2019 CRLLC #1331061</p>
+        </div>
+    </a>
+    <!-- ad 300x250 end -->
+
+</body></html>
