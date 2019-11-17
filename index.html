@@ -1,320 +1,2257 @@
     <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>3 top reasons</title>
-    <link href="https://fonts.googleapis.com/css?family=Domine:400,700|Roboto+Condensed:400,700|Nunito&display=swap" rel="stylesheet">
-    <style>
-        .ad-wrap {
-            display: inline-block;
-        }
+    <html lang="en">
 
-        .ad300x250 {
-            width: 300px;
-            height: 250px;
-            background: #999;
-            display: block;
-            position: relative;
-            overflow: hidden;
-            border: 1px solid #000;
-        }
-
-        .ad300x250 .slide1 {
-            background-image:url(image/Main-Background-Banner-6.jpg);
-            height: 100%;
-            width: 100%;
-            position: absolute;
-            top: 0;
-            left: 0;
-            background-size: auto 100%;
-            transform: scale(1.5);
-            background-position: center;
-            background-repeat: no-repeat;
-            animation: slide1 1s ease;
-            animation-fill-mode: forwards;
-        }
-
-        @keyframes slide1 {
-            0% {
-                opacity: 0;
+    <head>
+        <meta charset="UTF-8">
+        <title>3 top reasons</title>
+        <link href="https://fonts.googleapis.com/css?family=Domine:400,700|Roboto+Condensed:400,700|Nunito&display=swap" rel="stylesheet">
+        <style>
+            .ad-wrap {
+                display: inline-block;
             }
 
-            100% {
-                opacity: 1;
-                transform: scale(1);
-            }
-        }
 
-        .ad300x250 .slide1-text {
-            position: absolute;
-            top: 0;
-            color: #fff;
-            width: 270px;
-            font-family: 'Domine', serif;
-            font-size: 35px;
-            padding: 20px 15px;
-            margin: 0;
-            left: 0px;
-            opacity: 0;
-            animation: slide1-text1 3s ease;
-            animation-fill-mode: forwards;
-            animation-delay: 1s;
-        }
 
-        @keyframes slide1-text1 {
-            0% {
-                opacity: 0;
-                top: 50px;
+            /* ----- Ad 300x250 ----- */
+
+
+            .ad300x250 {
+                width: 300px;
+                height: 250px;
+                background: #999;
+                display: block;
+                position: relative;
+                overflow: hidden;
+                border: 1px solid #000;
             }
-            33.33%{
-                opacity: 1;
+
+            .ad300x250 .slide1 {
+                background-image: url(image/Main-Background-Banner-6.jpg);
+                height: 100%;
+                width: 100%;
+                position: absolute;
                 top: 0;
+                left: 0;
+                background-size: auto 100%;
+                transform: scale(1.5);
+                background-position: center;
+                background-repeat: no-repeat;
+                animation: slide1 1s ease;
+                animation-fill-mode: forwards;
             }
-           66.66%{
-                opacity: 1;
+
+            @keyframes slide1 {
+                0% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1;
+                    transform: scale(1);
+                }
+            }
+
+            .ad300x250 .slide1-text {
+                position: absolute;
                 top: 0;
-            }
-            100% {
-                opacity: 0;
-                top: -50px;
-            }
-        }
-
-        .ad300x250 .slide2-text1 {
-            position: absolute;
-            left: 0px;
-            top: 50px;
-            color: #fff;
-            width:250px;
-            font-family: 'Domine', serif;
-            font-size: 22px;
-            padding: 20px;
-            margin: 0;
-            font-style: italic;
-            opacity: 0;
-            animation: slide2-text1 1.5s ease;
-            animation-fill-mode: forwards;
-            animation-delay: 3s;
-        }
-
-        @keyframes slide2-text1 {
-            0% {
-                opacity: 0;
-            }
-            100% {
-                opacity: 1;
-                top: 0px;
-            }
-        }
-
-        .ad300x250 .slide2-text3 {
-            position: absolute;
-            bottom: 25px;
-            left: -50px;
-            color: #fff;
-            background: #818285;
-            width: 260px;
-            font-family: 'Domine', serif;
-            font-size: 14px;
-            padding: 5px 20px;
-            margin: 0;
-            opacity: 0;
-            line-height: 18px;
-            animation: slide2-text3 1s ease;
-            animation-fill-mode: forwards;
-            animation-delay: 6s;
-        }
-
-        @keyframes slide2-text3 {
-            0% {
-                opacity: 0;
-            }
-            100% {
-                opacity: 1;
+                color: #fff;
+                width: 270px;
+                font-family: 'Domine', serif;
+                font-size: 35px;
+                padding: 20px 15px;
+                margin: 0;
                 left: 0px;
-            }
-        }
-        .ad300x250 .slide2-text2 {
-            position: absolute;
-            bottom: 25px;
-            left: 0px;
-            color: #fff;
-            background-image: url(image/taxt-bg.png);
-            background-position: right;
-            background-size: auto 100%;
-            width: 150px;
-            font-family: 'Domine', serif;
-            font-size: 14px;
-            padding: 5px 20px;
-            margin: 0;
-            opacity: 0;
-            line-height: 18px;
-            animation: slide2-text2 1s ease;
-            animation-fill-mode: forwards;
-            animation-delay: 6s;
-        }
-
-        @keyframes slide2-text2 {
-            0% {
                 opacity: 0;
+                animation: slide1-text1 3s ease;
+                animation-fill-mode: forwards;
+                animation-delay: 1s;
             }
-            100% {
-                opacity: 1;
-                bottom: 50px;
+
+            @keyframes slide1-text1 {
+                0% {
+                    opacity: 0;
+                    top: 50px;
+                }
+
+                33.33% {
+                    opacity: 1;
+                    top: 0;
+                }
+
+                66.66% {
+                    opacity: 1;
+                    top: 0;
+                }
+
+                100% {
+                    opacity: 0;
+                    top: -50px;
+                }
             }
-        }
 
-        .ad300x250 .slide2-image{
-            position: absolute;
-            right: -50px;
-            width: 200px;
-            bottom: -15px;
-            opacity: 0;
-            animation: slide2-image1 1.5s ease;
-            animation-fill-mode: forwards;
-            animation-delay: 3s;
-        }
-
-        @keyframes slide2-image1 {
-            0% {
+            .ad300x250 .slide2-text1 {
+                position: absolute;
+                left: 0px;
+                top: 50px;
+                color: #fff;
+                width: 250px;
+                font-family: 'Domine', serif;
+                font-size: 22px;
+                padding: 20px;
+                margin: 0;
+                font-style: italic;
                 opacity: 0;
-            }
-            100% {
-                opacity: 1;
-                right: -0px;
-            }
-        }
-
-        .ad300x250 .slide3 {
-            background-image:url(image/Main-Background-Banner-6.jpg);
-            height: 100%;
-            width: 100%;
-            position: absolute;
-            top: 0;
-            left: 0;
-            opacity: 0;
-            background-size: auto 100%;
-            background-position: center;
-            background-repeat: no-repeat;
-            animation: slide3 1s ease;
-            animation-fill-mode: forwards;
-            animation-delay: 8.5s;
-        }
-
-        @keyframes slide3 {
-            0% {
-                opacity: 0;
+                animation: slide2-text1 1.5s ease;
+                animation-fill-mode: forwards;
+                animation-delay: 3s;
             }
 
-            100% {
-                opacity: 1;
-            }
-        }
-       
-        .ad300x250 .slide3-text{
-            position: absolute;
-            left: 0px;
-            color: #fff;
-            background-color: #223e81;
-            width: 300px;
-            font-family: 'Domine', serif;
-            font-size: 22px;
-            text-align: center;
-            padding: 10px 30px;
-            box-sizing: border-box;
-            margin: 0;
-            opacity: 0;
-            bottom: -25px;
-            line-height: 24px;
-            animation: slide3-text 1s ease;
-            animation-fill-mode: forwards;
-            animation-delay: 9s;
-        }
+            @keyframes slide2-text1 {
+                0% {
+                    opacity: 0;
+                }
 
-        @keyframes slide3-text {
-            0% {
-                opacity: 0;
+                100% {
+                    opacity: 1;
+                    top: 0px;
+                }
             }
 
-            100% {
-                opacity: 1;
+            .ad300x250 .slide2-text3 {
+                position: absolute;
                 bottom: 25px;
-            }
-        }
-
-
-        .ad300x250 .slide3-image {
-            position: absolute;
-            left: 60px;
-            width: 180px;
-            top: 10px;
-            opacity: 0;
-            animation: slide3-image1 1s ease;
-            animation-fill-mode: forwards;
-            animation-delay: 9s;
-        }
-
-        @keyframes slide3-image1{
-            0% {
+                left: -50px;
+                color: #fff;
+                background: #818285;
+                width: 260px;
+                font-family: 'Domine', serif;
+                font-size: 14px;
+                padding: 5px 20px;
+                margin: 0;
                 opacity: 0;
-                transform: scale(0);
+                line-height: 18px;
+                animation: slide2-text3 1s ease;
+                animation-fill-mode: forwards;
+                animation-delay: 6s;
             }
 
-            100% {
-                opacity: .8;
-                transform: scale(1);
+            @keyframes slide2-text3 {
+                0% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1;
+                    left: 0px;
+                }
             }
-        }
 
-        
+            .ad300x250 .slide2-text2 {
+                position: absolute;
+                bottom: 25px;
+                left: 0px;
+                color: #fff;
+                background-image: url(image/taxt-bg.png);
+                background-position: right;
+                background-size: 100% 100%;
+                width: 150px;
+                font-family: 'Domine', serif;
+                font-size: 14px;
+                padding: 5px 20px;
+                margin: 0;
+                opacity: 0;
+                line-height: 18px;
+                animation: slide2-text2 1s ease;
+                animation-fill-mode: forwards;
+                animation-delay: 6s;
+            }
 
-        .ad300x250 .copyright {
-            position: absolute;
-            bottom: 2px;
-            right: 5px;
-            margin: 0;
-            font-size: 10px;
-            color: #fff;
-            animation: copyright 1s ease;
-            animation-fill-mode: forwards;
-            animation-delay: 10.5s;
-            opacity: 0;
-        }
+            @keyframes slide2-text2 {
+                0% {
+                    opacity: 0;
+                }
 
-        @keyframes copyright {
-            0% {
+                100% {
+                    opacity: 1;
+                    bottom: 50px;
+                }
+            }
+
+            .ad300x250 .slide2-image {
+                position: absolute;
+                right: -50px;
+                width: 200px;
+                bottom: -15px;
+                opacity: 0;
+                animation: slide2-image1 1.5s ease;
+                animation-fill-mode: forwards;
+                animation-delay: 3s;
+            }
+
+            @keyframes slide2-image1 {
+                0% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1;
+                    right: -0px;
+                }
+            }
+
+            .ad300x250 .slide3 {
+                background-image: url(image/Main-Background-Banner-6.jpg);
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: 0;
+                background-size: auto 100%;
+                background-position: center;
+                background-repeat: no-repeat;
+                animation: slide3 1s ease;
+                animation-fill-mode: forwards;
+                animation-delay: 8.5s;
+            }
+
+            @keyframes slide3 {
+                0% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1;
+                }
+            }
+
+            .ad300x250 .slide3-text {
+                position: absolute;
+                left: 0px;
+                color: #fff;
+                background-color: #223e81;
+                width: 300px;
+                font-family: 'Domine', serif;
+                font-size: 22px;
+                text-align: center;
+                padding: 10px 30px;
+                box-sizing: border-box;
+                margin: 0;
+                opacity: 0;
+                bottom: -25px;
+                line-height: 24px;
+                animation: slide3-text 1s ease;
+                animation-fill-mode: forwards;
+                animation-delay: 9s;
+            }
+
+            @keyframes slide3-text {
+                0% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1;
+                    bottom: 25px;
+                }
+            }
+
+
+            .ad300x250 .slide3-image {
+                position: absolute;
+                left: 60px;
+                width: 180px;
+                top: 10px;
+                opacity: 0;
+                animation: slide3-image1 1s ease;
+                animation-fill-mode: forwards;
+                animation-delay: 9s;
+            }
+
+            @keyframes slide3-image1 {
+                0% {
+                    opacity: 0;
+                    transform: scale(0);
+                }
+
+                100% {
+                    opacity: .8;
+                    transform: scale(1);
+                }
+            }
+
+
+
+            .ad300x250 .copyright {
+                position: absolute;
+                bottom: 2px;
+                right: 5px;
+                margin: 0;
+                font-size: 10px;
+                color: #fff;
+                animation: copyright 1s ease;
+                animation-fill-mode: forwards;
+                animation-delay: 10.5s;
                 opacity: 0;
             }
 
-            100% {
-                opacity: 1;
-            }
-        }
-    </style>
-</head>
+            @keyframes copyright {
+                0% {
+                    opacity: 0;
+                }
 
-<body>
-    <!-- ad 300x250 start -->
-    <a href="" class="ad-wrap">
-        <div class="ad300x250">
-            <div class="slide1">
-                <P class="slide1-text">Did You Know?</P>
-            </div>
-            <div class="slide2">
-                <img src="image/House-Alone.png" alt="" class="slide2-image">
-                <div class="texts">
-                    <P class="slide2-text1">"... You do not have to lose a <b>single shingle</b> to be entitled to a full roof replacement."</P>
-                    <P class="slide2-text2">Attorney Mark Nation</P>
-                    <P class="slide2-text3">Florida Insurance Blog</P>
+                100% {
+                    opacity: 1;
+                }
+            }
+
+
+            /* ----- Ad 300x600 ----- */
+
+
+            .ad300x600 {
+                width: 300px;
+                height: 600px;
+                background: #999;
+                display: block;
+                position: relative;
+                overflow: hidden;
+                border: 1px solid #000;
+            }
+
+            .ad300x600 .slide1 {
+                background-image: url(image/Main-Background-Banner-6.jpg);
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-size: auto 100%;
+                transform: scale(1.5);
+                background-position: center;
+                background-repeat: no-repeat;
+                animation: slide1 1s ease;
+                animation-fill-mode: forwards;
+            }
+
+            @keyframes slide1 {
+                0% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1;
+                    transform: scale(1);
+                }
+            }
+
+            .ad300x600 .slide1-text {
+                position: absolute;
+                top: 100px;
+                color: #fff;
+                width: 270px;
+                font-family: 'Domine', serif;
+                font-size: 35px;
+                padding: 20px 15px;
+                margin: 0;
+                left: 0px;
+                opacity: 0;
+                animation: ad300x600-slide1-text1 3s ease;
+                animation-fill-mode: forwards;
+                animation-delay: 1s;
+            }
+
+            @keyframes ad300x600-slide1-text1 {
+                0% {
+                    opacity: 0;
+                    top: 150px;
+                }
+
+                33.33% {
+                    opacity: 1;
+                    top: 100px;
+                }
+
+                66.66% {
+                    opacity: 1;
+                    top: 100px;
+                }
+
+                100% {
+                    opacity: 0;
+                    top: 50px;
+                }
+            }
+
+            .ad300x600 .slide2-text1 {
+                position: absolute;
+                left: 0px;
+                top: 150px;
+                color: #fff;
+                width: 250px;
+                font-family: 'Domine', serif;
+                font-size: 22px;
+                padding: 20px;
+                margin: 0;
+                font-style: italic;
+                opacity: 0;
+                animation: ad300x600-slide2-text1 1.5s ease;
+                animation-fill-mode: forwards;
+                animation-delay: 3s;
+            }
+
+            @keyframes ad300x600-slide2-text1 {
+                0% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1;
+                    top: 100px;
+                }
+            }
+
+            .ad300x600 .slide2-text3 {
+                position: absolute;
+                bottom: 80px;
+                left: -50px;
+                color: #fff;
+                background: #818285;
+                width: 260px;
+                font-family: 'Domine', serif;
+                font-size: 14px;
+                padding: 5px 20px;
+                margin: 0;
+                opacity: 0;
+                line-height: 18px;
+                animation: slide2-text3 1s ease;
+                animation-fill-mode: forwards;
+                animation-delay: 6s;
+            }
+
+            @keyframes slide2-text3 {
+                0% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1;
+                    left: 0px;
+                }
+            }
+
+            .ad300x600 .slide2-text2 {
+                position: absolute;
+                bottom: 25px;
+                left: 0px;
+                color: #fff;
+                background-image: url(image/taxt-bg.png);
+                background-position: right;
+                background-size: 100% 100%;
+                width: 150px;
+                font-family: 'Domine', serif;
+                font-size: 14px;
+                padding: 5px 20px;
+                margin: 0;
+                opacity: 0;
+                line-height: 18px;
+                animation: ad300x600-slide2-text2 1s ease;
+                animation-fill-mode: forwards;
+                animation-delay: 6s;
+            }
+
+            @keyframes ad300x600-slide2-text2 {
+                0% {
+                    opacity: 0;
+                    bottom: 90px;
+                }
+
+                100% {
+                    opacity: 1;
+                    bottom: 105px;
+                }
+            }
+
+            .ad300x600 .slide2-image {
+                position: absolute;
+                right: -50px;
+                width: 250px;
+                bottom: 0px;
+                opacity: 0;
+                animation: slide2-image1 1.5s ease;
+                animation-fill-mode: forwards;
+                animation-delay: 3s;
+            }
+
+            @keyframes slide2-image1 {
+                0% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1;
+                    right: -0px;
+                }
+            }
+
+            .ad300x600 .slide3 {
+                background-image: url(image/Main-Background-Banner-6.jpg);
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: 0;
+                background-size: auto 100%;
+                background-position: center;
+                background-repeat: no-repeat;
+                animation: slide3 1s ease;
+                animation-fill-mode: forwards;
+                animation-delay: 8.5s;
+            }
+
+            @keyframes slide3 {
+                0% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1;
+                }
+            }
+
+            .ad300x600 .slide3-text {
+                position: absolute;
+                left: 0px;
+                color: #fff;
+                background-color: #223e81;
+                width: 300px;
+                font-family: 'Domine', serif;
+                font-size: 22px;
+                text-align: center;
+                padding: 10px 30px;
+                box-sizing: border-box;
+                margin: 0;
+                opacity: 0;
+                bottom: -25px;
+                line-height: 24px;
+                animation: ad300x600-slide3-text 1s ease;
+                animation-fill-mode: forwards;
+                animation-delay: 9s;
+            }
+
+            @keyframes ad300x600-slide3-text {
+                0% {
+                    opacity: 0;
+                    bottom: 50px;
+                }
+
+                100% {
+                    opacity: 1;
+                    bottom: 100px;
+                }
+            }
+
+
+            .ad300x600 .slide3-image {
+                position: absolute;
+                left: 25px;
+                width: 250px;
+                top: 100px;
+                opacity: 0;
+                animation: slide3-image1 1s ease;
+                animation-fill-mode: forwards;
+                animation-delay: 9s;
+            }
+
+            @keyframes slide3-image1 {
+                0% {
+                    opacity: 0;
+                    transform: scale(0);
+                }
+
+                100% {
+                    opacity: .8;
+                    transform: scale(1);
+                }
+            }
+
+
+
+            .ad300x600 .copyright {
+                position: absolute;
+                bottom: 2px;
+                right: 5px;
+                margin: 0;
+                font-size: 10px;
+                color: #fff;
+                animation: copyright 1s ease;
+                animation-fill-mode: forwards;
+                animation-delay: 10.5s;
+                opacity: 0;
+            }
+
+            @keyframes copyright {
+                0% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1;
+                }
+            }
+
+
+
+            /* ----- Ad 160x600 ----- */
+
+
+            .ad160x600 {
+                width: 160px;
+                height: 600px;
+                background: #999;
+                display: block;
+                position: relative;
+                overflow: hidden;
+                border: 1px solid #000;
+            }
+
+            .ad160x600 .slide1 {
+                background-image: url(image/Main-Background-Banner-6.jpg);
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-size: auto 100%;
+                transform: scale(1.5);
+                background-position: center;
+                background-repeat: no-repeat;
+                animation: slide1 1s ease;
+                animation-fill-mode: forwards;
+            }
+
+            @keyframes slide1 {
+                0% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1;
+                    transform: scale(1);
+                }
+            }
+
+            .ad160x600 .slide1-text {
+                position: absolute;
+                top: 100px;
+                color: #fff;
+                width: 170px;
+                font-family: 'Domine', serif;
+                font-size: 35px;
+                padding: 20px 15px;
+                margin: 0;
+                left: 0px;
+                opacity: 0;
+                animation: ad160x600-slide1-text1 3s ease;
+                animation-fill-mode: forwards;
+                animation-delay: 1s;
+            }
+
+            @keyframes ad160x600-slide1-text1 {
+                0% {
+                    opacity: 0;
+                    top: 150px;
+                }
+
+                33.33% {
+                    opacity: 1;
+                    top: 100px;
+                }
+
+                66.66% {
+                    opacity: 1;
+                    top: 100px;
+                }
+
+                100% {
+                    opacity: 0;
+                    top: 50px;
+                }
+            }
+
+            .ad160x600 .slide2-text1 {
+                position: absolute;
+                left: 0px;
+                top: 150px;
+                color: #fff;
+                width: 150px;
+                font-family: 'Domine', serif;
+                font-size: 22px;
+                padding: 20px 5px;
+                margin: 0;
+                font-style: italic;
+                opacity: 0;
+                animation: ad160x600-slide2-text1 1.5s ease;
+                animation-fill-mode: forwards;
+                animation-delay: 3s;
+            }
+
+            @keyframes ad160x600-slide2-text1 {
+                0% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1;
+                    top: 100px;
+                }
+            }
+
+            .ad160x600 .slide2-text3 {
+                position: absolute;
+                bottom: 50px;
+                left: -50px;
+                color: #fff;
+                background: #818285;
+                width: 160px;
+                font-family: 'Domine', serif;
+                font-size: 16px;
+                padding: 5px 8px;
+                margin: 0;
+                opacity: 0;
+                line-height: 18px;
+                animation: slide2-text3 1s ease;
+                animation-fill-mode: forwards;
+                animation-delay: 6s;
+            }
+
+            @keyframes slide2-text3 {
+                0% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1;
+                    left: 0px;
+                }
+            }
+
+            .ad160x600 .slide2-text2 {
+                position: absolute;
+                bottom: 25px;
+                left: 0px;
+                color: #fff;
+                background-image: url(image/taxt-bg.png);
+                background-position: right;
+                background-size: 100% 100%;
+                width: 100px;
+                font-family: 'Domine', serif;
+                font-size: 14px;
+                padding: 5px 20px;
+                margin: 0;
+                opacity: 0;
+                line-height: 18px;
+                animation: ad160x600-slide2-text2 1s ease;
+                animation-fill-mode: forwards;
+                animation-delay: 6s;
+            }
+
+            @keyframes ad160x600-slide2-text2 {
+                0% {
+                    opacity: 0;
+                    bottom: 40px;
+                }
+
+                100% {
+                    opacity: 1;
+                    bottom: 90px;
+                }
+            }
+
+            .ad160x600 .slide2-image {
+                position: absolute;
+                right: -100px;
+                width: 250px;
+                bottom: 0px;
+                opacity: 0;
+                animation: ad160x600-slide2-image1 1.5s ease;
+                animation-fill-mode: forwards;
+                animation-delay: 3s;
+            }
+
+            @keyframes ad160x600-slide2-image1 {
+                0% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1;
+                    right: -50px;
+                }
+            }
+
+            .ad160x600 .slide3 {
+                background-image: url(image/Main-Background-Banner-6.jpg);
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: 0;
+                background-size: auto 100%;
+                background-position: center;
+                background-repeat: no-repeat;
+                animation: slide3 1s ease;
+                animation-fill-mode: forwards;
+                animation-delay: 8.5s;
+            }
+
+            @keyframes slide3 {
+                0% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1;
+                }
+            }
+
+            .ad160x600 .slide3-text {
+                position: absolute;
+                left: 0px;
+                color: #fff;
+                background-color: #223e81;
+                width: 160px;
+                font-family: 'Domine', serif;
+                font-size: 22px;
+                text-align: center;
+                padding: 10px 5px;
+                box-sizing: border-box;
+                margin: 0;
+                opacity: 0;
+                bottom: -25px;
+                line-height: 24px;
+                animation: ad160x600-slide3-text 1s ease;
+                animation-fill-mode: forwards;
+                animation-delay: 9s;
+            }
+
+            @keyframes ad160x600-slide3-text {
+                0% {
+                    opacity: 0;
+                    bottom: 50px;
+                }
+
+                100% {
+                    opacity: 1;
+                    bottom: 100px;
+                }
+            }
+
+
+            .ad160x600 .slide3-image {
+                position: absolute;
+                left: 0px;
+                width: 160px;
+                top: 130px;
+                opacity: 0;
+                animation: slide3-image1 1s ease;
+                animation-fill-mode: forwards;
+                animation-delay: 9s;
+            }
+
+            @keyframes slide3-image1 {
+                0% {
+                    opacity: 0;
+                    transform: scale(0);
+                }
+
+                100% {
+                    opacity: .8;
+                    transform: scale(1);
+                }
+            }
+
+
+
+            .ad160x600 .copyright {
+                position: absolute;
+                bottom: 2px;
+                right: 5px;
+                margin: 0;
+                font-size: 10px;
+                color: #fff;
+                animation: copyright 1s ease;
+                animation-fill-mode: forwards;
+                animation-delay: 10.5s;
+                opacity: 0;
+            }
+
+            @keyframes copyright {
+                0% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1;
+                }
+            }
+
+
+            /* ----- Ad 300x50 ----- */
+
+
+            .ad300x50 {
+                width: 300px;
+                height: 50px;
+                background: #999;
+                display: block;
+                position: relative;
+                overflow: hidden;
+                border: 1px solid #000;
+            }
+
+            .ad300x50 .slide1 {
+                background-image: url(image/Main-Background-Banner-6.jpg);
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-size: 100% auto;
+                transform: scale(1.5);
+                background-position: center;
+                background-repeat: no-repeat;
+                animation: slide1 1s ease;
+                animation-fill-mode: forwards;
+            }
+
+            @keyframes slide1 {
+                0% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1;
+                    transform: scale(1);
+                }
+            }
+
+            .ad300x50 .slide1-text {
+                position: absolute;
+                top: 0;
+                color: #fff;
+                width: 270px;
+                font-family: 'Domine', serif;
+                font-size: 35px;
+                padding: 20px 15px;
+                margin: 0;
+                left: 0px;
+                line-height: 10px;
+                opacity: 0;
+                animation: slide1-text1 3s ease;
+                animation-fill-mode: forwards;
+                animation-delay: 1s;
+            }
+
+            @keyframes slide1-text1 {
+                0% {
+                    opacity: 0;
+                    top: 50px;
+                }
+
+                33.33% {
+                    opacity: 1;
+                    top: 0;
+                }
+
+                66.66% {
+                    opacity: 1;
+                    top: 0;
+                }
+
+                100% {
+                    opacity: 0;
+                    top: -50px;
+                }
+            }
+
+            .ad300x50 .slide2-text1 {
+                position: absolute;
+                left: 0px;
+                top: 47px;
+                color: #fff;
+                width: 240px;
+                font-family: 'Domine', serif;
+                font-size: 11px;
+                padding: 3px 5px;
+                margin: 0;
+                font-style: italic;
+                opacity: 0;
+                animation: ad300x50-slide2-text1 1.5s ease;
+                animation-fill-mode: forwards;
+                animation-delay: 3s;
+            }
+
+            @keyframes ad300x50-slide2-text1 {
+                0% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1;
+                    top: -3px;
+                }
+            }
+
+            .ad300x50 .slide2-text3 {
+                position: absolute;
+                bottom: 0px;
+                left: -50px;
+                color: #fff;
+                background: #818285;
+                width: 280px;
+                font-family: 'Domine', serif;
+                font-size: 11px;
+                padding: 1px 10px;
+                margin: 0;
+                opacity: 0;
+                line-height: 10px;
+                animation: ad300x50-slide2-text3 1s ease;
+                animation-fill-mode: forwards;
+                animation-delay: 6s;
+            }
+
+            @keyframes ad300x50-slide2-text3 {
+                0% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1;
+                    left: 0px;
+                }
+            }
+
+            .ad300x50 .slide2-text2 {
+                position: absolute;
+                bottom: 0px;
+                left: 0px;
+                color: #fff;
+                background-image: url(image/taxt-bg.png);
+                background-position: right;
+                background-size: 100% 100%;
+                width: 150px;
+                font-family: 'Domine', serif;
+                font-size: 11px;
+                padding: 1px 10px;
+                margin: 0;
+                opacity: 0;
+                line-height: 10px;
+                animation: ad300x50-slide2-text2 1s ease;
+                animation-fill-mode: forwards;
+                animation-delay: 6s;
+            }
+
+            @keyframes ad300x50-slide2-text2 {
+                0% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1;
+                    bottom: 11px;
+                }
+            }
+
+            .ad300x50 .slide2-image {
+                position: absolute;
+                right: -50px;
+                width: 80px;
+                bottom: -10px;
+                opacity: 0;
+                animation: ad300x50-slide2-image1 1.5s ease;
+                animation-fill-mode: forwards;
+                animation-delay: 3s;
+            }
+
+            @keyframes ad300x50-slide2-image1 {
+                0% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1;
+                    right: 0px;
+                }
+            }
+
+            .ad300x50 .slide3 {
+                background-image: url(image/Main-Background-Banner-6.jpg);
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: 0;
+                background-size: 100% auto;
+                background-position: center;
+                background-repeat: no-repeat;
+                animation: slide3 1s ease;
+                animation-fill-mode: forwards;
+                animation-delay: 8.5s;
+            }
+
+            @keyframes slide3 {
+                0% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1;
+                }
+            }
+
+            .ad300x50 .slide3-text {
+                position: absolute;
+                left: 5px;
+                color: #fff;
+                background-color: #223e81;
+                width: 180px;
+                font-family: 'Domine', serif;
+                font-size: 15px;
+                text-align: center;
+                padding: 5px 10px;
+                box-sizing: border-box;
+                margin: 0;
+                opacity: 0;
+                bottom: -25px;
+                line-height: 15px;
+                animation: ad300x50-slide3-text 1s ease;
+                animation-fill-mode: forwards;
+                animation-delay: 9s;
+            }
+
+            @keyframes ad300x50-slide3-text {
+                0% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1;
+                    bottom: 5px;
+                }
+            }
+
+
+            .ad300x50 .slide3-image {
+                position: absolute;
+                right: 20px;
+                width: 75px;
+                top: -10px;
+                opacity: 0;
+                animation: slide3-image1 1s ease;
+                animation-fill-mode: forwards;
+                animation-delay: 9s;
+            }
+
+            @keyframes slide3-image1 {
+                0% {
+                    opacity: 0;
+                    transform: scale(0);
+                }
+
+                100% {
+                    opacity: .8;
+                    transform: scale(1);
+                }
+            }
+
+
+
+            .ad300x50 .copyright {
+                position: absolute;
+                bottom: 0px;
+                right: 0px;
+                margin: 0;
+                font-size: 10px;
+                color: #fff;
+                animation: copyright 1s ease;
+                animation-fill-mode: forwards;
+                animation-delay: 10.5s;
+                opacity: 0;
+            }
+
+            @keyframes copyright {
+                0% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1;
+                }
+            }
+
+
+            /* ----- Ad 320x50 ----- */
+
+
+            .ad320x50 {
+                width: 320px;
+                height: 50px;
+                background: #999;
+                display: block;
+                position: relative;
+                overflow: hidden;
+                border: 1px solid #000;
+            }
+
+            .ad320x50 .slide1 {
+                background-image: url(image/Main-Background-Banner-6.jpg);
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-size: 100% auto;
+                transform: scale(1.5);
+                background-position: center;
+                background-repeat: no-repeat;
+                animation: slide1 1s ease;
+                animation-fill-mode: forwards;
+            }
+
+            @keyframes slide1 {
+                0% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1;
+                    transform: scale(1);
+                }
+            }
+
+            .ad320x50 .slide1-text {
+                position: absolute;
+                top: 0;
+                color: #fff;
+                width: 270px;
+                font-family: 'Domine', serif;
+                font-size: 35px;
+                padding: 20px 15px;
+                margin: 0;
+                left: 0px;
+                line-height: 10px;
+                opacity: 0;
+                animation: slide1-text1 3s ease;
+                animation-fill-mode: forwards;
+                animation-delay: 1s;
+            }
+
+            @keyframes slide1-text1 {
+                0% {
+                    opacity: 0;
+                    top: 50px;
+                }
+
+                33.33% {
+                    opacity: 1;
+                    top: 0;
+                }
+
+                66.66% {
+                    opacity: 1;
+                    top: 0;
+                }
+
+                100% {
+                    opacity: 0;
+                    top: -50px;
+                }
+            }
+
+            .ad320x50 .slide2-text1 {
+                position: absolute;
+                left: 0px;
+                top: 47px;
+                color: #fff;
+                width: 240px;
+                font-family: 'Domine', serif;
+                font-size: 11px;
+                padding: 3px 5px;
+                margin: 0;
+                font-style: italic;
+                opacity: 0;
+                animation: ad320x50-slide2-text1 1.5s ease;
+                animation-fill-mode: forwards;
+                animation-delay: 3s;
+            }
+
+            @keyframes ad320x50-slide2-text1 {
+                0% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1;
+                    top: -3px;
+                }
+            }
+
+            .ad320x50 .slide2-text3 {
+                position: absolute;
+                bottom: 0px;
+                left: -50px;
+                color: #fff;
+                background: #818285;
+                width: 300px;
+                font-family: 'Domine', serif;
+                font-size: 11px;
+                padding: 1px 10px;
+                margin: 0;
+                opacity: 0;
+                line-height: 10px;
+                animation: ad320x50-slide2-text3 1s ease;
+                animation-fill-mode: forwards;
+                animation-delay: 6s;
+            }
+
+            @keyframes ad320x50-slide2-text3 {
+                0% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1;
+                    left: 0px;
+                }
+            }
+
+            .ad320x50 .slide2-text2 {
+                position: absolute;
+                bottom: 0px;
+                left: 0px;
+                color: #fff;
+                background-image: url(image/taxt-bg.png);
+                background-position: right;
+                background-size: 100%;
+                width: 150px;
+                font-family: 'Domine', serif;
+                font-size: 11px;
+                padding: 1px 10px;
+                margin: 0;
+                opacity: 0;
+                line-height: 10px;
+                animation: ad320x50-slide2-text2 1s ease;
+                animation-fill-mode: forwards;
+                animation-delay: 6s;
+            }
+
+            @keyframes ad320x50-slide2-text2 {
+                0% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1;
+                    bottom: 11px;
+                }
+            }
+
+            .ad320x50 .slide2-image {
+                position: absolute;
+                right: -50px;
+                width: 80px;
+                bottom: -10px;
+                opacity: 0;
+                animation: ad320x50-slide2-image1 1.5s ease;
+                animation-fill-mode: forwards;
+                animation-delay: 3s;
+            }
+
+            @keyframes ad320x50-slide2-image1 {
+                0% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1;
+                    right: 0px;
+                }
+            }
+
+            .ad320x50 .slide3 {
+                background-image: url(image/Main-Background-Banner-6.jpg);
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: 0;
+                background-size: 100% auto;
+                background-position: center;
+                background-repeat: no-repeat;
+                animation: slide3 1s ease;
+                animation-fill-mode: forwards;
+                animation-delay: 8.5s;
+            }
+
+            @keyframes slide3 {
+                0% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1;
+                }
+            }
+
+            .ad320x50 .slide3-text {
+                position: absolute;
+                left: 5px;
+                color: #fff;
+                background-color: #223e81;
+                width: 200px;
+                font-family: 'Domine', serif;
+                font-size: 15px;
+                text-align: center;
+                padding: 5px 10px;
+                box-sizing: border-box;
+                margin: 0;
+                opacity: 0;
+                bottom: -25px;
+                line-height: 15px;
+                animation: ad320x50-slide3-text 1s ease;
+                animation-fill-mode: forwards;
+                animation-delay: 9s;
+            }
+
+            @keyframes ad320x50-slide3-text {
+                0% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1;
+                    bottom: 5px;
+                }
+            }
+
+
+            .ad320x50 .slide3-image {
+                position: absolute;
+                right: 20px;
+                width: 75px;
+                top: -10px;
+                opacity: 0;
+                animation: slide3-image1 1s ease;
+                animation-fill-mode: forwards;
+                animation-delay: 9s;
+            }
+
+            @keyframes slide3-image1 {
+                0% {
+                    opacity: 0;
+                    transform: scale(0);
+                }
+
+                100% {
+                    opacity: .8;
+                    transform: scale(1);
+                }
+            }
+
+
+
+            .ad320x50 .copyright {
+                position: absolute;
+                bottom: 0px;
+                right: 0px;
+                margin: 0;
+                font-size: 10px;
+                color: #fff;
+                animation: copyright 1s ease;
+                animation-fill-mode: forwards;
+                animation-delay: 10.5s;
+                opacity: 0;
+            }
+
+            @keyframes copyright {
+                0% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1;
+                }
+            }
+
+
+            /* ----- Ad 728x900 ----- */
+
+
+            .ad728x90 {
+                width: 728px;
+                height: 90px;
+                background: #999;
+                display: block;
+                position: relative;
+                overflow: hidden;
+                border: 1px solid #000;
+            }
+
+            .ad728x90 .slide1 {
+                background-image: url(image/Main-Background-Banner-6.jpg);
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-size: 100% auto;
+                transform: scale(1.5);
+                background-position: center;
+                background-repeat: no-repeat;
+                animation: slide1 1s ease;
+                animation-fill-mode: forwards;
+            }
+
+            @keyframes slide1 {
+                0% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1;
+                    transform: scale(1);
+                }
+            }
+
+            .ad728x90 .slide1-text {
+                position: absolute;
+                top: 0;
+                color: #fff;
+                width: 270px;
+                font-family: 'Domine', serif;
+                font-size: 35px;
+                padding: 20px 50px;
+                margin: 0;
+                left: 0px;
+                line-height: 45px;
+                opacity: 0;
+                animation: slide1-text1 3s ease;
+                animation-fill-mode: forwards;
+                animation-delay: 1s;
+            }
+
+            @keyframes slide1-text1 {
+                0% {
+                    opacity: 0;
+                    top: 50px;
+                }
+
+                33.33% {
+                    opacity: 1;
+                    top: 0;
+                }
+
+                66.66% {
+                    opacity: 1;
+                    top: 0;
+                }
+
+                100% {
+                    opacity: 0;
+                    top: -50px;
+                }
+            }
+
+            .ad728x90 .slide2-text1 {
+                position: absolute;
+                left: 30px;
+                top: 47px;
+                color: #fff;
+                width: 500px;
+                font-family: 'Domine', serif;
+                font-size: 20px;
+                padding: 3px 5px;
+                margin: 0;
+                font-style: italic;
+                opacity: 0;
+                animation: ad728x90-slide2-text1 1.5s ease;
+                animation-fill-mode: forwards;
+                animation-delay: 3s;
+            }
+
+            @keyframes ad728x90-slide2-text1 {
+                0% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1;
+                    top: -0px;
+                }
+            }
+
+            .ad728x90 .slide2-text3 {
+                position: absolute;
+                bottom: 0px;
+                left: -50px;
+                color: #fff;
+                background: #818285;
+                width: 658px;
+                font-family: 'Domine', serif;
+                font-size: 16px;
+                padding: 1px 35px;
+                margin: 0;
+                opacity: 0;
+                line-height: 20px;
+                animation: ad728x90-slide2-text3 1s ease;
+                animation-fill-mode: forwards;
+                animation-delay: 6s;
+            }
+
+            @keyframes ad728x90-slide2-text3 {
+                0% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1;
+                    left: 0px;
+                }
+            }
+
+            .ad728x90 .slide2-text2 {
+                position: absolute;
+                bottom: 0px;
+                left: 0px;
+                color: #fff;
+                background-image: url(image/taxt-bg.png);
+                background-position: right;
+                background-size: 100%;
+                width: 400px;
+                font-family: 'Domine', serif;
+                font-size: 16px;
+                padding: 1px 35px;
+                margin: 0;
+                opacity: 0;
+                line-height: 20px;
+                animation: ad728x90-slide2-text2 1s ease;
+                animation-fill-mode: forwards;
+                animation-delay: 6s;
+            }
+
+            @keyframes ad728x90-slide2-text2 {
+                0% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1;
+                    bottom: 19.8px;
+                }
+            }
+
+            .ad728x90 .slide2-image {
+                position: absolute;
+                right: -50px;
+                width: 130px;
+                bottom: -8px;
+                opacity: 0;
+                animation: ad728x90-slide2-image1 1.5s ease;
+                animation-fill-mode: forwards;
+                animation-delay: 3s;
+            }
+
+            @keyframes ad728x90-slide2-image1 {
+                0% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1;
+                    right: 0px;
+                }
+            }
+
+            .ad728x90 .slide3 {
+                background-image: url(image/Main-Background-Banner-6.jpg);
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: 0;
+                background-size: 100% auto;
+                background-position: center;
+                background-repeat: no-repeat;
+                animation: slide3 1s ease;
+                animation-fill-mode: forwards;
+                animation-delay: 8.5s;
+            }
+
+            @keyframes slide3 {
+                0% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1;
+                }
+            }
+
+            .ad728x90 .slide3-text {
+                position: absolute;
+                left: 80px;
+                color: #fff;
+                background-color: #223e81;
+                width: 300px;
+                font-family: 'Domine', serif;
+                font-size: 22px;
+                text-align: center;
+                padding: 10px 10px;
+                box-sizing: border-box;
+                margin: 0;
+                opacity: 0;
+                bottom: -40px;
+                line-height: 25px;
+                animation: ad728x90-slide3-text 1s ease;
+                animation-fill-mode: forwards;
+                animation-delay: 9s;
+            }
+
+            @keyframes ad728x90-slide3-text {
+                0% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1;
+                    bottom: 10px;
+                }
+            }
+
+
+            .ad728x90 .slide3-image {
+                position: absolute;
+                right: 80px;
+                width: 150px;
+                top: -17px;
+                opacity: 0;
+                animation: slide3-image1 1s ease;
+                animation-fill-mode: forwards;
+                animation-delay: 9s;
+            }
+
+            @keyframes slide3-image1 {
+                0% {
+                    opacity: 0;
+                    transform: scale(0);
+                }
+
+                100% {
+                    opacity: .8;
+                    transform: scale(1);
+                }
+            }
+
+
+
+            .ad728x90 .copyright {
+                position: absolute;
+                bottom: 2px;
+                right: 5px;
+                margin: 0;
+                font-size: 10px;
+                color: #fff;
+                animation: copyright 1s ease;
+                animation-fill-mode: forwards;
+                animation-delay: 10.5s;
+                opacity: 0;
+            }
+
+            @keyframes copyright {
+                0% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1;
+                }
+            }
+
+
+            /* ----- Ad 970x90 ----- */
+
+
+            .ad970x90 {
+                width: 970px;
+                height: 90px;
+                background: #999;
+                display: block;
+                position: relative;
+                overflow: hidden;
+                border: 1px solid #000;
+            }
+
+            .ad970x90 .slide1 {
+                background-image: url(image/Main-Background-Banner-6.jpg);
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-size: 100% auto;
+                transform: scale(1.5);
+                background-position: center;
+                background-repeat: no-repeat;
+                animation: slide1 1s ease;
+                animation-fill-mode: forwards;
+            }
+
+            @keyframes slide1 {
+                0% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1;
+                    transform: scale(1);
+                }
+            }
+
+            .ad970x90 .slide1-text {
+                position: absolute;
+                top: 0;
+                color: #fff;
+                width: 270px;
+                font-family: 'Domine', serif;
+                font-size: 35px;
+                padding: 20px 100px;
+                margin: 0;
+                left: 0px;
+                line-height: 45px;
+                opacity: 0;
+                animation: slide1-text1 3s ease;
+                animation-fill-mode: forwards;
+                animation-delay: 1s;
+            }
+
+            @keyframes slide1-text1 {
+                0% {
+                    opacity: 0;
+                    top: 50px;
+                }
+
+                33.33% {
+                    opacity: 1;
+                    top: 0;
+                }
+
+                66.66% {
+                    opacity: 1;
+                    top: 0;
+                }
+
+                100% {
+                    opacity: 0;
+                    top: -50px;
+                }
+            }
+
+            .ad970x90 .slide2-text1 {
+                position: absolute;
+                left: 50px;
+                top: 47px;
+                color: #fff;
+                width: 500px;
+                font-family: 'Domine', serif;
+                font-size: 20px;
+                padding: 3px 5px;
+                margin: 0;
+                font-style: italic;
+                opacity: 0;
+                animation: ad970x90-slide2-text1 1.5s ease;
+                animation-fill-mode: forwards;
+                animation-delay: 3s;
+            }
+
+            @keyframes ad970x90-slide2-text1 {
+                0% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1;
+                    top: -0px;
+                }
+            }
+
+            .ad970x90 .slide2-text3 {
+                position: absolute;
+                bottom: 0px;
+                left: -50px;
+                color: #fff;
+                background: #818285;
+                width: 860px;
+                font-family: 'Domine', serif;
+                font-size: 16px;
+                padding: 1px 55px;
+                margin: 0;
+                opacity: 0;
+                line-height: 20px;
+                animation: ad970x90-slide2-text3 1s ease;
+                animation-fill-mode: forwards;
+                animation-delay: 6s;
+            }
+
+            @keyframes ad970x90-slide2-text3 {
+                0% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1;
+                    left: 0px;
+                }
+            }
+
+            .ad970x90 .slide2-text2 {
+                position: absolute;
+                bottom: 0px;
+                left: 0px;
+                color: #fff;
+                background-image: url(image/taxt-bg.png);
+                background-position: right;
+                background-size: 100%;
+                width: 550px;
+                font-family: 'Domine', serif;
+                font-size: 16px;
+                padding: 1px 55px;
+                margin: 0;
+                opacity: 0;
+                line-height: 20px;
+                animation: ad970x90-slide2-text2 1s ease;
+                animation-fill-mode: forwards;
+                animation-delay: 6s;
+            }
+
+            @keyframes ad970x90-slide2-text2 {
+                0% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1;
+                    bottom: 19.8px;
+                }
+            }
+
+            .ad970x90 .slide2-image {
+                position: absolute;
+                right: -50px;
+                width: 130px;
+                bottom: -8px;
+                opacity: 0;
+                animation: ad970x90-slide2-image1 1.5s ease;
+                animation-fill-mode: forwards;
+                animation-delay: 3s;
+            }
+
+            @keyframes ad970x90-slide2-image1 {
+                0% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1;
+                    right: 0px;
+                }
+            }
+
+            .ad970x90 .slide3 {
+                background-image: url(image/Main-Background-Banner-6.jpg);
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: 0;
+                background-size: 100% auto;
+                background-position: center;
+                background-repeat: no-repeat;
+                animation: slide3 1s ease;
+                animation-fill-mode: forwards;
+                animation-delay: 8.5s;
+            }
+
+            @keyframes slide3 {
+                0% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1;
+                }
+            }
+
+            .ad970x90 .slide3-text {
+                position: absolute;
+                left: 100px;
+                color: #fff;
+                background-color: #223e81;
+                width: 400px;
+                font-family: 'Domine', serif;
+                font-size: 22px;
+                text-align: center;
+                padding: 10px 50px;
+                box-sizing: border-box;
+                margin: 0;
+                opacity: 0;
+                bottom: -40px;
+                line-height: 25px;
+                animation: ad970x90-slide3-text 1s ease;
+                animation-fill-mode: forwards;
+                animation-delay: 9s;
+            }
+
+            @keyframes ad970x90-slide3-text {
+                0% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1;
+                    bottom: 10px;
+                }
+            }
+
+
+            .ad970x90 .slide3-image {
+                position: absolute;
+                right:150px;
+                width: 150px;
+                top: -17px;
+                opacity: 0;
+                animation: slide3-image1 1s ease;
+                animation-fill-mode: forwards;
+                animation-delay: 9s;
+            }
+
+            @keyframes slide3-image1 {
+                0% {
+                    opacity: 0;
+                    transform: scale(0);
+                }
+
+                100% {
+                    opacity: .8;
+                    transform: scale(1);
+                }
+            }
+
+
+
+            .ad970x90 .copyright {
+                position: absolute;
+                bottom: 2px;
+                right: 5px;
+                margin: 0;
+                font-size: 10px;
+                color: #fff;
+                animation: copyright 1s ease;
+                animation-fill-mode: forwards;
+                animation-delay: 10.5s;
+                opacity: 0;
+            }
+
+            @keyframes copyright {
+                0% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1;
+                }
+            }
+            
+            
+
+        </style>
+    </head>
+
+    <body>
+       
+        <!-- ad 300x250 start -->
+        <a href="https://callowayroofingfl.com/?utm_source=geo7-19-19&utm_medium=mobile&utm_campaign=OcWgWdmr" class="ad-wrap">
+            <div class="ad300x250">
+                <div class="slide1">
+                    <P class="slide1-text">Did You Know?</P>
                 </div>
+                <div class="slide2">
+                    <img src="image/House-Alone.png" alt="" class="slide2-image">
+                    <div class="texts">
+                        <P class="slide2-text1">"... You do not have to lose a <b>single shingle</b> to be entitled to a full roof replacement."</P>
+                        <P class="slide2-text2">Attorney Mark Nation</P>
+                        <P class="slide2-text3">Florida Insurance Blog</P>
+                    </div>
+                </div>
+                <div class="slide3">
+                    <img src="image/Ey5uhwqG.png" alt="" class="slide3-image">
+                    <P class="slide3-text">Schedule a Free Roof Inspection</P>
+                </div>
+                <p class="copyright">&copy; 2019 CRLLC #1331061</p>
             </div>
-            <div class="slide3">
-                <img src="image/Ey5uhwqG.png" alt="" class="slide3-image">
-                <P class="slide3-text">Schedule a Free Roof Inspection</P>
+        </a>
+        <!-- ad 300x250 end -->
+        <br>
+        <br>
+        <!-- ad 300x600 start -->
+        <a href="https://callowayroofingfl.com/?utm_source=geo7-19-19&utm_medium=mobile&utm_campaign=OcWgWdmr" class="ad-wrap">
+            <div class="ad300x600">
+                <div class="slide1">
+                    <P class="slide1-text">Did You Know?</P>
+                </div>
+                <div class="slide2">
+                    <img src="image/House-Alone.png" alt="" class="slide2-image">
+                    <div class="texts">
+                        <P class="slide2-text1">"... You do not have to lose a <b>single shingle</b> to be entitled to a full roof replacement."</P>
+                        <P class="slide2-text2">Attorney Mark Nation</P>
+                        <P class="slide2-text3">Florida Insurance Blog</P>
+                    </div>
+                </div>
+                <div class="slide3">
+                    <img src="image/Ey5uhwqG.png" alt="" class="slide3-image">
+                    <P class="slide3-text">Schedule a Free Roof Inspection</P>
+                </div>
+                <p class="copyright">&copy; 2019 CRLLC #1331061</p>
             </div>
-            <p class="copyright">&copy; 2019 CRLLC #1331061</p>
-        </div>
-    </a>
-    <!-- ad 300x250 end -->
+        </a>
+        <!-- ad 300x600 end -->
+        <br>
+        <br>
+        <!-- ad 160x600 start -->
+        <a href="https://callowayroofingfl.com/?utm_source=geo7-19-19&utm_medium=mobile&utm_campaign=OcWgWdmr" class="ad-wrap">
+            <div class="ad160x600">
+                <div class="slide1">
+                    <P class="slide1-text">Did You Know?</P>
+                </div>
+                <div class="slide2">
+                    <img src="image/House-Alone.png" alt="" class="slide2-image">
+                    <div class="texts">
+                        <P class="slide2-text1">"... You do not have to lose a <b>single shingle</b> to be entitled to a full roof replacement."</P>
+                        <P class="slide2-text2">Attorney Mark Nation</P>
+                        <P class="slide2-text3">Florida Insurance Blog</P>
+                    </div>
+                </div>
+                <div class="slide3">
+                    <img src="image/Ey5uhwqG.png" alt="" class="slide3-image">
+                    <P class="slide3-text">Schedule a Free Roof Inspection</P>
+                </div>
+                <p class="copyright">&copy; 2019 CRLLC #1331061</p>
+            </div>
+        </a>
+        <!-- ad 160x600 end -->
+        <br>
+        <br>
+        <!-- ad 300x50 start -->
+        <a href="https://callowayroofingfl.com/?utm_source=geo7-19-19&utm_medium=mobile&utm_campaign=OcWgWdmr" class="ad-wrap">
+            <div class="ad300x50">
+                <div class="slide1">
+                    <P class="slide1-text">Did You Know?</P>
+                </div>
+                <div class="slide2">
+                    <img src="image/House-Alone.png" alt="" class="slide2-image">
+                    <div class="texts">
+                        <P class="slide2-text1">"... You do not have to lose a <b>single shingle</b> to be entitled to a full roof replacement."</P>
+                        <P class="slide2-text2">Attorney Mark Nation</P>
+                        <P class="slide2-text3">Florida Insurance Blog</P>
+                    </div>
+                </div>
+                <div class="slide3">
+                    <img src="image/Ey5uhwqG.png" alt="" class="slide3-image">
+                    <P class="slide3-text">Schedule a Free Roof Inspection</P>
+                </div>
+                <p class="copyright">&copy; 2019 CRLLC #1331061</p>
+            </div>
+        </a>
+        <!-- ad 300x50 end -->
+        <br>
+        <br>
+        <!-- ad 320x50 start -->
+        <a href="https://callowayroofingfl.com/?utm_source=geo7-19-19&utm_medium=mobile&utm_campaign=OcWgWdmr" class="ad-wrap">
+            <div class="ad320x50">
+                <div class="slide1">
+                    <P class="slide1-text">Did You Know?</P>
+                </div>
+                <div class="slide2">
+                    <img src="image/House-Alone.png" alt="" class="slide2-image">
+                    <div class="texts">
+                        <P class="slide2-text1">"... You do not have to lose a <b>single shingle</b> to be entitled to a full roof replacement."</P>
+                        <P class="slide2-text2">Attorney Mark Nation</P>
+                        <P class="slide2-text3">Florida Insurance Blog</P>
+                    </div>
+                </div>
+                <div class="slide3">
+                    <img src="image/Ey5uhwqG.png" alt="" class="slide3-image">
+                    <P class="slide3-text">Schedule a Free Roof Inspection</P>
+                </div>
+                <p class="copyright">&copy; 2019 CRLLC #1331061</p>
+            </div>
+        </a>
+        <!-- ad 320x50 end -->
+        <br>
+        <br>
+        <!-- ad 728x90 start -->
+        <a href="https://callowayroofingfl.com/?utm_source=geo7-19-19&utm_medium=mobile&utm_campaign=OcWgWdmr" class="ad-wrap">
+            <div class="ad728x90">
+                <div class="slide1">
+                    <P class="slide1-text">Did You Know?</P>
+                </div>
+                <div class="slide2">
+                    <img src="image/House-Alone.png" alt="" class="slide2-image">
+                    <div class="texts">
+                        <P class="slide2-text1">"... You do not have to lose a <b>single shingle</b> to be entitled to a full roof replacement."</P>
+                        <P class="slide2-text2">Attorney Mark Nation</P>
+                        <P class="slide2-text3">Florida Insurance Blog</P>
+                    </div>
+                </div>
+                <div class="slide3">
+                    <img src="image/Ey5uhwqG.png" alt="" class="slide3-image">
+                    <P class="slide3-text">Schedule a Free Roof Inspection</P>
+                </div>
+                <p class="copyright">&copy; 2019 CRLLC #1331061</p>
+            </div>
+        </a>
+        <!-- ad 728x90 end -->
+        <br>
+        <br>
+        <!-- ad 970x90 start -->
+        <a href="https://callowayroofingfl.com/?utm_source=geo7-19-19&utm_medium=mobile&utm_campaign=OcWgWdmr" class="ad-wrap">
+            <div class="ad970x90">
+                <div class="slide1">
+                    <P class="slide1-text">Did You Know?</P>
+                </div>
+                <div class="slide2">
+                    <img src="image/House-Alone.png" alt="" class="slide2-image">
+                    <div class="texts">
+                        <P class="slide2-text1">"... You do not have to lose a <b>single shingle</b> to be entitled to a full roof replacement."</P>
+                        <P class="slide2-text2">Attorney Mark Nation</P>
+                        <P class="slide2-text3">Florida Insurance Blog</P>
+                    </div>
+                </div>
+                <div class="slide3">
+                    <img src="image/Ey5uhwqG.png" alt="" class="slide3-image">
+                    <P class="slide3-text">Schedule a Free Roof Inspection</P>
+                </div>
+                <p class="copyright">&copy; 2019 CRLLC #1331061</p>
+            </div>
+        </a>
+        <!-- ad 970x90 end -->
 
-</body></html>
+    </body>
+
+    </html>
